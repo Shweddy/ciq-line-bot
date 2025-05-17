@@ -1,5 +1,6 @@
 ciq_data = {
     "KUL": {
+        "airport_name": "Kuala Lumpur International Airport",
         "immigration_form": "N",
         "customs_form": "N",
         "health_declaration": "N",
@@ -14,6 +15,7 @@ ciq_data = {
         "remark": "6 copies (KUL-DMK) prepared by GS"
     },
     "PEN": {
+        "airport_name": "Penang International Airport",
         "immigration_form": "N",
         "customs_form": "N",
         "health_declaration": "N",
@@ -28,6 +30,7 @@ ciq_data = {
         "remark": ""
     },
     "JHB": {
+        "airport_name": "Senai International Airport",
         "immigration_form": "N",
         "customs_form": "N",
         "health_declaration": "N",
@@ -42,6 +45,7 @@ ciq_data = {
         "remark": "-P4 collects all crew pasports before door closing at DMK for immigration clearance at JHB\n-P4 brings GD(DMK-JHB) with all crew passports for immigration clearance at JHB"
     },
     "SIN": {
+        "airport_name": "Singapore Changi Airport",
         "immigration_form": "N",
         "customs_form": "N",
         "health_declaration": "N",
@@ -56,6 +60,7 @@ ciq_data = {
         "remark": "All rubbish bags must be brought back to DMK by keeping in the cabin"
     },
     "HKG": {
+        "airport_name": "Hong Kong International Airport",
         "immigration_form": "N",
         "customs_form": "N",
         "health_declaration": "N",
@@ -70,6 +75,7 @@ ciq_data = {
         "remark": ""
     },
     "RGN": {
+        "airport_name": "Yangon International Airport",
         "immigration_form": "Y",
         "customs_form": "N",
         "health_declaration": "N",
@@ -84,6 +90,7 @@ ciq_data = {
         "remark": "-After all inbound pax passed imm. clearance process/ wait for permission from staff then A/C door can be close & depart\n-All operating crews of all flights entering Myanmar must wear the face mask throughout the flight"
     },
     "MDL": {
+        "airport_name": "Mandalay International Airport",
         "immigration_form": "Y",
         "customs_form": "N",
         "health_declaration": "N",
@@ -98,6 +105,7 @@ ciq_data = {
         "remark": "All operating crews of all flights entering Myanmar must wear the face mask throughout the flight"
     },
     "LPQ": {
+        "airport_name": "Luang Prabang International Airport",
         "immigration_form": "Y",
         "customs_form": "N",
         "health_declaration": "N",
@@ -112,6 +120,7 @@ ciq_data = {
         "remark": "10 countries no need VOA - Thai, Sin, Vietnam, Malay, Brunei, Myanmar, Indo, Philiphine, Cambodia & Lao. (4 countries of exemption; stay 15 days -Japan, South Korea, Russia, and Swistzerland)"
     },
     "VTE": {
+        "airport_name": "Wattay International Airport",
         "immigration_form": "Y",
         "customs_form": "N",
         "health_declaration": "N",
@@ -126,6 +135,7 @@ ciq_data = {
         "remark": ""
     },
     "SGN": {
+        "airport_name": "Tan Son Nhat International Airport",
         "immigration_form": "N",
         "customs_form": "N",
         "health_declaration": "N",
@@ -140,6 +150,7 @@ ciq_data = {
         "remark": ""
     },
     "CXR": {
+        "airport_name": "Cam Ranh International Airport",
         "immigration_form": "N",
         "customs_form": "N",
         "health_declaration": "N",
@@ -154,6 +165,7 @@ ciq_data = {
         "remark": ""
     },
     "DAD": {
+        "airport_name": "Da Nang International Airport",
         "immigration_form": "N",
         "customs_form": "N",
         "health_declaration": "N",
@@ -168,6 +180,7 @@ ciq_data = {
         "remark": "Should there be garbage bags to dispose, SCC shall signs garbage bag handover form.(refer to email)"
     },
     "HAN": {
+        "airport_name": "Noi Bai International Airport",
         "immigration_form": "N",
         "customs_form": "N",
         "health_declaration": "N",
@@ -182,6 +195,7 @@ ciq_data = {
         "remark": ""
     },
     "PQC": {
+        "airport_name": "Phu Quoc International Airport",
         "immigration_form": "N",
         "customs_form": "N",
         "health_declaration": "N",
@@ -196,6 +210,7 @@ ciq_data = {
         "remark": ""
     },
     "PNH": {
+        "airport_name": "Phnom Penh International Airport",
         "immigration_form": "N",
         "customs_form": "N",
         "health_declaration": "N",
@@ -210,6 +225,7 @@ ciq_data = {
         "remark": ""
     },
     "SAI": {
+        "airport_name": "Siem Reap–Angkor International Airport",
         "immigration_form": "N",
         "customs_form": "N",
         "health_declaration": "N",
@@ -224,6 +240,7 @@ ciq_data = {
         "remark": "All rubbish bags must be brought back to DMK by handing it over to GHA to keep in cargo hold."
     },
     "MLE": {
+        "airport_name": "Velana International Airport",
         "immigration_form": "N",
         "customs_form": "N",
         "health_declaration": "N",
@@ -238,6 +255,7 @@ ciq_data = {
         "remark": ""
     },
     "DPS": {
+        "airport_name": "Ngurah Rai International Airport",
         "immigration_form": "N",
         "customs_form": "N",
         "health_declaration": "N",
@@ -252,6 +270,7 @@ ciq_data = {
         "remark": ""
     },
     "CGK": {
+        "airport_name": "Soekarno–Hatta International Airport",
         "immigration_form": "N",
         "customs_form": "N",
         "health_declaration": "N",
@@ -266,6 +285,7 @@ ciq_data = {
         "remark": ""
     },
     "TRZ": {
+        "airport_name": "Tiruchirappalli International Airport",
         "immigration_form": "Y",
         "customs_form": "N",
         "health_declaration": "N",
@@ -280,6 +300,7 @@ ciq_data = {
         "remark": "Pre-embarkation (pre-flight) disinsection process\n-An extra GD printed by cabin crew\n- Once cabin crews board the A/C, SCC is to ensure an empty spray can is placed at FWD galley.( In case it is unavailable, notify the engineer immediately)\n- SCC keeps an empty spray can in the proper area away from food.\n - After door opening at TRZ, SCC hands an empty spray can and extra GD together with all onboard documents to GS."
     },
     "CCU": {
+        "airport_name": "Netaji Subhas Chandra Bose International Airport",
         "immigration_form": "Y",
         "customs_form": "N",
         "health_declaration": "N",
@@ -294,6 +315,7 @@ ciq_data = {
         "remark": ""
     },
     "GAY": {
+        "airport_name": "Gaya International Airport",
         "immigration_form": "Y",
         "customs_form": "N",
         "health_declaration": "N",
@@ -308,6 +330,7 @@ ciq_data = {
         "remark": ""
     },
     "AMD": {
+        "airport_name": "Sardar Vallabhbhai Patel International Airport",
         "immigration_form": "Y",
         "customs_form": "N",
         "health_declaration": "N",
@@ -322,6 +345,7 @@ ciq_data = {
         "remark": ""
     },
     "JAI": {
+        "airport_name": "Jaipur International Airport",
         "immigration_form": "Y",
         "customs_form": "N",
         "health_declaration": "N",
@@ -336,6 +360,7 @@ ciq_data = {
         "remark": ""
     },
     "MAA": {
+        "airport_name": "Chennai International Airport",
         "immigration_form": "Y",
         "customs_form": "N",
         "health_declaration": "N",
@@ -350,6 +375,7 @@ ciq_data = {
         "remark": ""
     },
     "BLR": {
+        "airport_name": "Kempegowda International Airport",
         "immigration_form": "Y",
         "customs_form": "N",
         "health_declaration": "N",
@@ -364,6 +390,7 @@ ciq_data = {
         "remark": ""
     },
     "COK": {
+        "airport_name": "Cochin International Airport",
         "immigration_form": "Y",
         "customs_form": "N",
         "health_declaration": "N",
@@ -378,6 +405,7 @@ ciq_data = {
         "remark": "Pre-embarkation (pre-flight) disinsection process\n- Once cabin crews board the aircraft, SCC is to ensure an empty spray can is placed at the FWD galley.( In case it is unavailable, notify the engineer immediately)\n- SCC keeps an empty spray can in the proper area away from food.\n - After door opening at COK, SCC hands an empty spray can together with all onboard documents to GS."
     },
     "GAU": {
+        "airport_name": "Lokpriya Gopinath Bordoloi International Airport",
         "immigration_form": "Y",
         "customs_form": "N",
         "health_declaration": "N",
@@ -392,6 +420,7 @@ ciq_data = {
         "remark": "All rubbish bags must be brought back to DMK by keeping in the cabin"
     },
     "LKO": {
+        "airport_name": "Chaudhary Charan Singh International Airport",
         "immigration_form": "N",
         "customs_form": "N",
         "health_declaration": "N",
@@ -406,6 +435,7 @@ ciq_data = {
         "remark": ""
     },
     "VTZ": {
+        "airport_name": "Visakhapatnam Airport",
         "immigration_form": "Y",
         "customs_form": "N",
         "health_declaration": "N",
@@ -420,6 +450,7 @@ ciq_data = {
         "remark": "Immigration forms will be distributed to foreign nationals only"
     },
     "HYD": {
+        "airport_name": "Rajiv Gandhi International Airport",
         "immigration_form": "Y",
         "customs_form": "N",
         "health_declaration": "N",
@@ -434,6 +465,7 @@ ciq_data = {
         "remark": "Immigration forms will be distributed to foreign nationals only"
     },
     "DAC": {
+        "airport_name": "Hazrat Shahjalal International Airport",
         "immigration_form": "N",
         "customs_form": "N",
         "health_declaration": "N",
@@ -448,6 +480,7 @@ ciq_data = {
         "remark": ""
     },
     "FUK": {
+        "airport_name": "Fukuoka Airport",
         "immigration_form": "N",
         "customs_form": "N",
         "health_declaration": "N",
@@ -462,6 +495,7 @@ ciq_data = {
         "remark": "All rubbish bags must be brought back to DMK by handing it over to GS to keep in cargo hold."
     },
     "OKA": {
+        "airport_name": "Naha Airport",
         "immigration_form": "N",
         "customs_form": "N",
         "health_declaration": "N",
@@ -476,6 +510,7 @@ ciq_data = {
         "remark": "All rubbish bags must be brought back to DMK by handing it over to GHA to keep in cargo hold.\n-FD240/241 (quick turn),No step down for Immigration Clearance."
     },
     "NRT": {
+        "airport_name": "Narita International Airport",
         "immigration_form": "N",
         "customs_form": "N",
         "health_declaration": "N",
@@ -490,6 +525,7 @@ ciq_data = {
         "remark": "All rubbish bags must be brought back to DMK by handing it over to GHA to keep in cargo hold."
     },
     "TPE": {
+        "airport_name": "Taiwan Taoyuan International Airport",
         "immigration_form": "N",
         "customs_form": "N",
         "health_declaration": "N",
@@ -504,6 +540,7 @@ ciq_data = {
         "remark": ""
     },
     "KHH": {
+        "airport_name": "Kaohsiung International Airport",
         "immigration_form": "N",
         "customs_form": "N",
         "health_declaration": "N",
@@ -518,6 +555,7 @@ ciq_data = {
         "remark": ""
     },
     "MFM": {
+        "airport_name": "Macau International Airport",
         "immigration_form": "N",
         "customs_form": "N",
         "health_declaration": "N",
@@ -532,6 +570,7 @@ ciq_data = {
         "remark": ""
     },
     "CMB": {
+        "airport_name": "Bandaranaike International Airport",
         "immigration_form": "N",
         "customs_form": "N",
         "health_declaration": "N",
@@ -546,6 +585,7 @@ ciq_data = {
         "remark": "SCC needs to print out 2 copies of Colombo Custom Form and complete them with all crew member signature. Airasia stamp is provided at Flight Operations."
     },
     "KTM": {
+        "airport_name": "Tribhuvan International Airport",
         "immigration_form": "N",
         "customs_form": "N",
         "health_declaration": "N",
@@ -560,6 +600,7 @@ ciq_data = {
         "remark": ""
     },
     "BWA": {
+        "airport_name": "Gautam Buddha Airport",
         "immigration_form": "N",
         "customs_form": "N",
         "health_declaration": "N",
