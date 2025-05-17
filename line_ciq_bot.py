@@ -62,23 +62,23 @@ def handle_message(event):
     if text.startswith('/'):
         airport_code = text[1:]  # Remove the '/' and get the airport code
         response = format_ciq_info(airport_code)
-    else:
-        response = "Please enter an airport code starting with '/' (e.g., /KUL)"
-    
-    line_bot_api.reply_message(
-        event.reply_token,
-        TextSendMessage(text=response)
-    )
+        
+        line_bot_api.reply_message(
+            event.reply_token,
+            TextSendMessage(text=response)
+        )
+    # If text doesn't start with '/', don't send any response
+    # This allows other conversations to happen without showing an error
 
 def run_local_test():
     """Run a local test of the bot without using the Line API."""
     print("CIQ Line Bot Tester")
     print("==================")
-    print("Type an airport code (e.g., KUL, SIN, HKG) or 'exit' to quit")
+    print("Type an airport code with leading '/' (e.g., /KUL) or 'exit' to quit")
     
     while True:
         try:
-            user_input = input("\nEnter command (e.g., /KUL): ").strip().upper()
+            user_input = input("\nEnter command: ").strip().upper()
             
             if user_input.lower() == 'exit':
                 print("Goodbye!")
@@ -88,8 +88,8 @@ def run_local_test():
                 airport_code = user_input[1:]
                 response = format_ciq_info(airport_code)
                 print("\n" + response)
-            else:
-                print("Please enter an airport code starting with '/' (e.g., /KUL)")
+            # If user input doesn't start with '/', don't show any message
+            # This allows other conversations to happen without showing an error
         except KeyboardInterrupt:
             print("\nExiting...")
             break
