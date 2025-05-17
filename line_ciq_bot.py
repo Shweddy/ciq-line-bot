@@ -34,6 +34,10 @@ def format_ciq_info(airport_code):
     
     return response
 
+@app.route("/", methods=['GET'])
+def home():
+    return "Line Bot is running!"
+
 @app.route("/callback", methods=['POST'])
 def callback():
     # Get X-Line-Signature header value
