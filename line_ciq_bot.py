@@ -5,6 +5,7 @@ from linebot.models import MessageEvent, TextMessage, TextSendMessage
 import os
 from ciq_data import ciq_data
 from dotenv import load_dotenv
+import sys
 
 # Load environment variables from .env file
 load_dotenv()
@@ -65,5 +66,36 @@ def handle_message(event):
         TextSendMessage(text=response)
     )
 
+def run_local_test():
+    """Run a local test of the bot without using the Line API."""
+    print("CIQ Line Bot Tester")
+    print("==================")
+    print("Type an airport code (e.g., KUL, SIN, HKG) or 'exit' to quit")
+    
+    while True:
+        try:
+            user_input = input("\nEnter command (e.g., /KUL): ").strip().upper()
+            
+            if user_input.lower() == 'exit':
+                print("Goodbye!")
+                break
+            
+            if user_input.startswith('/'):
+                airport_code = user_input[1:]
+                response = format_ciq_info(airport_code)
+                print("\n" + response)
+            else:
+                print("Please enter an airport code starting with '/' (e.g., /KUL)")
+        except KeyboardInterrupt:
+            print("\nExiting...")
+            break
+        except Exception as e:
+            print(f"Error: {e}")
+
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=5000) 
+    if len(sys.argv) > 1 and sys.argv[1] == 'test':
+        # Run in test mode if 'test' argument is provided
+        run_local_test()
+    else:
+        # Run the Flask server by default
+        app.run(host='0.0.0.0', port=5000) 

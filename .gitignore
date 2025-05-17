@@ -35,4 +35,7 @@ ENV/
 *.swo
 
 # Logs
-*.log 
+*.log
+
+# Exclude sensitive and unnecessary files
+.DS_Store 
