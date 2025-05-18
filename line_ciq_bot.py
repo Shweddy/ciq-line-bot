@@ -25,12 +25,45 @@ def format_ciq_info(airport_code):
         return f"Sorry, I don't have information for airport code {airport_code}."
     
     info = ciq_data[airport_code]
-    response = f"CIQ Information for {airport_code}:\n\n"
     
-    for key, value in info.items():
-        # Format the key to be more readable
-        formatted_key = key.replace('_', ' ').title()
-        response += f"{formatted_key}: {value}\n"
+    response = f"✈️ *{airport_code} INFORMATION* ✈️\n\n"
+    response += f"🏢 *{info['airport_name']}*\n\n"
+    
+    response += "📋 *FORMS:*\n"
+    response += f"• Immigration - {info['immigration_form']}\n"
+    response += f"• Customs - {info['customs_form']}\n"
+    response += f"• Health - {info['health_declaration']}\n\n"
+    
+    response += "📄 *SPECIAL DOCS:*\n"
+    response += f"• Security Checklist - {info['special_document']}\n"
+    response += f"• A/C Disinsection - {info.get('A/C Disinsection', 'N/A')}\n"
+    response += f"• GD - {info.get('GD', 'N/A')}\n\n"
+    
+    response += "🚨 *ANNOUNCEMENT:*\n"
+    if info['special_announcement']:
+        # Handle specifically for HKG format
+        if "Smoking(Public Health) Monkeypox Beware of belongings" in info['special_announcement']:
+            response += "• Public Health - Smoking\n"
+            response += "• Monkeypox - Beware belongings\n"
+        else:
+            # Generic handling for other announcements
+            announcements = info['special_announcement'].replace(" Beware of belongings", "")
+            items = [item.strip() for item in announcements.split() if item.strip()]
+            for item in items:
+                response += f"• {item}\n"
+            if "Beware of belongings" in info['special_announcement']:
+                response += "• Beware of belongings\n"
+    else:
+        response += "• None\n"
+    
+    response += "\nℹ️ *OTHER INFO:*\n"
+    response += f"• Headcount - {info['headcount']}\n"
+    response += f"• Step Down Imm. - {info['step_down_immigration']}\n"
+    response += f"• Wheelchair - {info['wchr']}\n"
+    response += f"• UTC: {info['utc_offset']}"
+    
+    if info['remark'] and info['remark'].strip():
+        response += f"\n\n📝 *REMARK:*\n{info['remark']}"
     
     return response
 
@@ -96,10 +129,19 @@ def run_local_test():
         except Exception as e:
             print(f"Error: {e}")
 
+def test_airport_name():
+    """Test function specifically for checking airport name."""
+    airport_code = "KUL"
+    response = format_ciq_info(airport_code)
+    print(response)
+
 if __name__ == "__main__":
     if len(sys.argv) > 1 and sys.argv[1] == 'test':
         # Run in test mode if 'test' argument is provided
         run_local_test()
+    elif len(sys.argv) > 1 and sys.argv[1] == 'test_name':
+        # Test just the airport name formatting
+        test_airport_name()
     else:
         # Run the Flask server by default
         app.run(host='0.0.0.0', port=5000) 
