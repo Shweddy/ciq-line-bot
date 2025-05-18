@@ -614,4 +614,4 @@ ciq_data = {
         "utc_offset": "+0545",
         "remark": ""
     }
-        "
+}
