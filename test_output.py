@@ -25,7 +25,7 @@ def format_ciq_info(airport_code):
     # Check if special_announcement is a list (new format) or string (old format)
     special_announcement = info['special_announcement']
     
-    if not special_announcement:
+    if not special_announcement or special_announcement == "N":
         # Handle empty case
         response += "• None\n"
     elif isinstance(special_announcement, list):
@@ -38,8 +38,12 @@ def format_ciq_info(airport_code):
         if "Smoking(Public Health) Monkeypox Beware of belongings" in special_announcement:
             response += "• Public Health - Smoking\n"
             response += "• Monkeypox - Beware belongings\n"
+        # Check if it's a simple announcement without special formatting needed
+        elif special_announcement.count(' ') < 5 and '&' not in special_announcement and 'trafficking' not in special_announcement:
+            # Simple announcement - don't split it
+            response += f"• {special_announcement}\n"
         else:
-            # Common patterns for splitting announcements
+            # More complex announcement that needs parsing
             announcement_text = special_announcement
             
             # Handle common separators
@@ -90,5 +94,5 @@ def format_ciq_info(airport_code):
     
     return response
 
-# Test the SIN airport output
-print(format_ciq_info("SIN")) 
+# Test the MLE airport output
+print(format_ciq_info("MLE")) 
