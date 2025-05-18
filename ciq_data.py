@@ -52,7 +52,7 @@ ciq_data = {
         "special_document": "A/C Security Checklist prepared by crew (TAA Ver.) A/C Security Checklist prepared by GS/SIN(CAAS Version)",
         "A/C Disinsection": "Not required",
         "GD": "2 copies prepared by GS",
-        "special_announcement": "Drug trafficking & Weapon carrying Automated Clearance",
+        "special_announcement": ["Drug trafficking", "Weapon carrying", "Automated Clearance"],
         "headcount": "N",
         "step_down_immigration": "N",
         "wchr": "20 SGD",
